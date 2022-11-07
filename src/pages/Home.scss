@@ -1,0 +1,155 @@
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+
+$Primary: hsl(172, 67%, 45%);
+
+// ### Neutral
+
+$Neutral1: hsl(183, 100%, 15%);
+$Neutral2: hsl(186, 14%, 43%);
+$Neutral3: hsl(184, 14%, 56%);
+$Neutral4: hsl(185, 41%, 84%);
+$Neutral5: hsl(189, 41%, 97%);
+$Neutral6: hsl(0, 0%, 100%);
+
+// ## Typography
+
+// ### Body Copy
+
+// - Font size (form inputs): 24px
+
+// ### Font
+
+// - Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+// - Weights: 700
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+// its necessary to hidde the spin button
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  background-color: $Neutral4;
+}
+
+main {
+  height: 350px;
+  width: 700px;
+  border-radius: 20px;
+  background-color: $Neutral6;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input__container {
+  height: 300px;
+  width: 50%;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  //   border: 1px solid black;
+}
+
+.result__container {
+  height: 300px;
+  width: 50%;
+  border-radius: 20px;
+  background-color: $Neutral1;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tip_amount,
+.total_person {
+  width: 90%;
+  display: flex;
+  align-items: center;
+
+  .values {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 10px;
+
+    label {
+      font-size: 0.6rem;
+      color: $Neutral6;
+    }
+    span {
+      font-size: 0.4rem;
+      color: $Neutral3;
+    }
+  }
+
+  p {
+    width: 30%;
+    justify-content: right;
+    color: $Primary;
+    font-size: 1.5rem;
+    margin-right: 30px;
+  }
+}
+
+// .total_person {
+//   display: flex;
+
+//   p {
+//     color: $Primary;
+//     margin-right: 10px;
+//   }
+// }
+
+.reset_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 80%;
+  border-radius: 7px;
+  background-color: $Primary;
+  color: $Neutral1;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+
+  cursor: pointer;
+  &:hover {
+    background-color: $Neutral4;
+  }
+}
