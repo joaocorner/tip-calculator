@@ -12,15 +12,30 @@ const Home = () => {
       <main>
         <div className="input__container">
           <div className="input__container--bill">
-            <label htmlFor="bill">Bill</label>
+            <label>Bill</label>
             <div className="input__container--bill--input">
               <img src={icondollar} alt="icon dollar" />
               <input type="number" name="bill" id="bill" />
             </div>
           </div>
-          <label>Select Tip %</label>
+          <div>
+            <label>Select Tip %</label>
+            <div>
+              <button className="button--tip">5%</button>
+              <button className="button--tip">10%</button>
+              <button className="button--tip">15%</button>
+              <button className="button--tip">25%</button>
+              <button className="button--tip">50%</button>
+              <input
+                type="number"
+                name="custom"
+                id="custom"
+                className="button--tip"
+              />
+            </div>
+          </div>
           <div className="input__container--">
-            <label htmlFor="bill">Number of People</label>
+            <label>Number of People</label>
             <div className="input__container--people">
               <img src={icondollar} alt="icon dollar" />
               <input type="number" name="people" id="people" />
