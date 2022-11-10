@@ -59,7 +59,6 @@ input[type="number"] {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid black;
   background-color: $Neutral4;
 }
 
@@ -68,73 +67,92 @@ main {
   width: 700px;
   border-radius: 20px;
   background-color: $Neutral6;
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.input__container {
-  height: 300px;
-  width: 50%;
-  margin-left: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  //   border: 1px solid black;
-}
+  input {
+    background-color: $Neutral5;
+    border: none;
+    border-radius: 5px;
 
-.result__container {
-  height: 300px;
-  width: 50%;
-  border-radius: 20px;
-  background-color: $Neutral1;
-  margin-right: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
+    &:focus {
+      outline: none;
+      border: 3px solid $Primary;
+      border-radius: 5px;
+    }
+  }
 
-.tip_amount,
-.total_person {
-  width: 90%;
-  display: flex;
-  align-items: center;
-
-  .values {
+  .input__container {
+    height: 300px;
+    width: 50%;
+    margin-left: 25px;
     display: flex;
     flex-direction: column;
-    width: 70%;
-    margin-left: 10px;
+    justify-content: space-around;
 
-    label {
-      font-size: 0.6rem;
+    .button--tip {
+      height: 50px;
+      width: 80px;
+      margin: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: $Neutral1;
       color: $Neutral6;
-    }
-    span {
-      font-size: 0.4rem;
-      color: $Neutral3;
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $Neutral4;
+        color: $Neutral1;
+      }
     }
   }
 
-  p {
-    width: 30%;
-    justify-content: right;
-    color: $Primary;
-    font-size: 1.5rem;
-    margin-right: 30px;
+  .result__container {
+    height: 300px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: $Neutral1;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .tip_amount,
+    .total_person {
+      width: 90%;
+      display: flex;
+      align-items: center;
+
+      .values {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 10px;
+
+        label {
+          font-size: 0.6rem;
+          color: $Neutral6;
+        }
+        span {
+          font-size: 0.4rem;
+          color: $Neutral3;
+        }
+      }
+
+      p {
+        width: 30%;
+        justify-content: right;
+        color: $Primary;
+        font-size: 1.5rem;
+        margin-right: 30px;
+      }
+    }
   }
 }
-
-// .total_person {
-//   display: flex;
-
-//   p {
-//     color: $Primary;
-//     margin-right: 10px;
-//   }
-// }
 
 .reset_button {
   display: flex;
