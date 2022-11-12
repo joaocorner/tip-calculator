@@ -1,9 +1,15 @@
+import { useState } from "react";
 import icondollar from "../components/Images/icon-dollar.svg";
 import iconperson from "../components/Images/icon-person.svg";
 import logo from "../components/Images/logo.svg";
 import "./Home.scss";
 
 const Home = () => {
+  const [bill, setBill] = useState(0);
+  const [people, setPeople] = useState(0);
+  const [tipAmount, setTipAmount] = useState(0);
+  const [total, setTotal] = useState(0);
+
   return (
     <div className="home">
       <header>
