@@ -34,7 +34,7 @@ const Home = () => {
   };
 
   const handleCalculate = () => {
-    setTipAmount((bill * tipPercent) / 100);
+    setTipAmount((bill * tipPercent) / 100 / people);
     setTotal(((bill * tipPercent) / 100 + parseInt(bill)) / people);
   };
 
