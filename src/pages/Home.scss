@@ -104,6 +104,11 @@ main {
     flex-direction: column;
     justify-content: space-around;
 
+    label {
+      font-size: 0.6rem;
+      color: $Neutral3;
+    }
+
     .button--tip {
       height: 50px;
       width: 80px;
