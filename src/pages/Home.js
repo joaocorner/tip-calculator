@@ -34,6 +34,7 @@ const Home = () => {
               <button className="button--tip">50%</button>
               <input
                 type="number"
+                placeholder="Custom"
                 name="custom"
                 id="custom"
                 className="button--tip"
