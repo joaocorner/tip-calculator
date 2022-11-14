@@ -50,7 +50,7 @@ const Home = () => {
       <main>
         <div className="input__container">
           <div className="input__container--bill">
-            <label>Bill</label>
+            <label>Conta</label>
             <div className="input__container--bill--input input--icon">
               <img src={icondollar} alt="logo" />
               <input
@@ -63,7 +63,7 @@ const Home = () => {
             </div>
           </div>
           <div>
-            <label>Select Tip %</label>
+            <label>Selecionar Gorjeta %</label>
             <div>
               <button
                 className="button--tip"
@@ -102,7 +102,7 @@ const Home = () => {
               </button>
               <input
                 type="number"
-                placeholder="Custom"
+                placeholder="Outro"
                 name="custom"
                 id="custom"
                 className="button--tip"
@@ -112,7 +112,7 @@ const Home = () => {
             </div>
           </div>
           <div className="input__container--">
-            <label>Number of People</label>
+            <label>Número de Pessoas</label>
             <div className="input__container--people">
               <img src={iconperson} alt="logo" />
               <input
@@ -129,15 +129,15 @@ const Home = () => {
         <div className="result__container">
           <div className="tip_amount">
             <div className="values">
-              <label>Tip Amount</label>
-              <span>/ person</span>
+              <label>Gorjeta total</label>
+              <span>/ pessoa</span>
             </div>
             <p>${tipAmount.toFixed(2)}</p>
           </div>
           <div className="total_person">
             <div className="values">
               <label>Total</label>
-              <span>/ person</span>
+              <span>/ pessoa</span>
             </div>
             <p>${total.toFixed(2)}</p>
           </div>
