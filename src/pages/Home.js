@@ -113,7 +113,7 @@ const Home = () => {
           </div>
           <div className="input__container--">
             <label>Número de Pessoas</label>
-            <div className="input__container--people">
+            <div className="input__container--people input--icon">
               <img src={iconperson} alt="logo" />
               <input
                 type="number"
