@@ -210,3 +210,28 @@ main {
     background-color: $Neutral4;
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    height: 80px;
+    padding: 10px 0;
+    // margin: 40px 0;
+  }
+
+  main {
+    flex-direction: column;
+    height: 400px;
+    width: 99%;
+    padding: 30px 0;
+    border-radius: 6%;
+
+    .input__container {
+      margin: 40px 0;
+    }
+
+    .result__container {
+      margin: 40px 0;
+      height: 400px;
+    }
+  }
+}
