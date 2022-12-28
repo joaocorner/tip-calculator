@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import icondollar from "../components/Images/icon-dollar.svg";
-import iconperson from "../components/Images/icon-person.svg";
-import logo from "../components/Images/logo.svg";
+import icondollar from "../assets/icon-dollar.svg";
+import iconperson from "../assets/icon-person.svg";
+import logo from "../assets/logo.svg";
 import "./Home.scss";
 
 const Home = () => {
