@@ -6,7 +6,7 @@ Project developed to improve concepts in React.
 
 [Demo](https://joaocorner.github.io/tip-calculator)
 
-![Preview](https://raw.githubusercontent.com/joaocorner/tip-calculator/main/public/img/preview.gif)
+![Preview](https://raw.githubusercontent.com/joaocorner/tip-calculator/main/public/preview.gif)
 
 ## Sumary
 
